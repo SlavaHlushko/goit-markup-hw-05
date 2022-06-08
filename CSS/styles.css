@@ -236,54 +236,7 @@ background-color: #2196F3;
 }
 
 
-.backdrop {
-position: fixed;
 
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-
-background-color: rgba(0, 0, 0, 0.2);
-}
-
-.backdrop.is-hidden {
-opacity: 0;
-pointer-events: none;
-}
-
-.modal {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-
-width: 528px;
-min-height: 581px;
-
-
-background: #FFFFFF;
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
-
-}
-
-.btn-close {
-position: absolute;
-border:none;
-background: none;
-position: absolute;
-top: 0;
-right: 0;
-margin: 8px 8px 765px 490px;
-cursor: pointer; }
-
-.btn-icon {
-background: #FFFFFF;
-border: 1px solid rgba(0, 0, 0, 0.1);
-border-radius: 50%;
-
-}
 
 
 /*-------Особенности------------*/
@@ -781,4 +734,58 @@ border-right: 1px solid #EEEEEE;
 border-bottom: 1px solid #EEEEEE;
 border-left: 1px solid #EEEEEE;
 padding: 20px 24px;
+}
+
+
+/*-----------МОДАЛЬНЕ ВІКНО-------------*/
+
+
+.backdrop {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 528px;
+    min-height: 581px;
+
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+}
+
+.btn-close {
+    position: absolute;
+    border: none;
+    background: none;
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    cursor: pointer;
+   
+}
+
+.btn-icon {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
 }

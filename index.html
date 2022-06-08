@@ -51,9 +51,15 @@
                 <h1 class="title">
                     Эффективные решения для вашего бизнеса
                 </h1>
-                <button type="button" class="btn">
+                <button type="button" class="btn" data-model-open>
                     Заказать услугу
                 </button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <p></p>
+                        <button class="btn" data-modal-close>Закрыть</button>
+                    </div>
+                </div>
             </div>
         </section>
         <!--Особенности-->
@@ -317,54 +323,55 @@
         </section>
     </main>
     <!--Футер-->
-    <footer class="footer">
-        <div class="container footer-container">
-            <div>
-                <a href="" lang="en" class="footer-logo"><span class="footer-logo-web">Web</span>Studio</a>
-                <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
-                <ul class="footer-list">
-                    <li class="footer-list-item"><a class="footer-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="footer-list-item"><a class="footer-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                </ul>
-            </div>
-            <div class="container-soc">
-                <h2 class="header-soc">Присоединяйтесь</h2>
-                    <ul class="team-icon-list">
-                        <li class="team-icon-item">
-                            <a class="card-soc" href="https://www.instagram.com/">
-                                <svg class="soc-icon" width="20px" height="20px">
-                                    <use href="./images/icons.svg#icon-instagram-2">
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="team-icon-item">
-                            <a class="card-soc" href="">
-                                <svg class="soc-icon" width="20px" height="20px">
-                                    <use href="./images/icons.svg#icon-twitter-1">
-                                    </use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="team-icon-item">
-                            <a class="card-soc" href="">
-                                 <svg class="soc-icon" width="20px" height="20px">
-                                    <use href="./images/icons.svg#icon-facebook-1">
-                                    </use>
-                                 </svg>
-                            </a>
-                        </li>
-                        <li class="team-icon-item">
-                            <a class="card-soc" href="">
-                                <svg class="soc-icon" width="20px" height="20px">
-                                    <use href="./images/icons.svg#icon-linkedin-1"></use>
-                                </svg>
-                            </a>
-                        </li>
+        <footer class="footer">
+            <div class="container footer-container">
+                <div>
+                    <a href="" lang="en" class="footer-logo"><span class="footer-logo-web">Web</span>Studio</a>
+                    <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+                    <ul class="footer-list">
+                        <li class="footer-list-item"><a class="footer-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="footer-list-item"><a class="footer-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
-            </div>
+                </div>
+                <div class="container-soc">
+                    <h2 class="header-soc">Присоединяйтесь</h2>
+                        <ul class="team-icon-list">
+                            <li class="team-icon-item">
+                                <a class="card-soc" href="https://www.instagram.com/">
+                                    <svg class="soc-icon" width="20px" height="20px">
+                                        <use href="./images/icons.svg#icon-instagram-2">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-icon-item">
+                                <a class="card-soc" href="">
+                                    <svg class="soc-icon" width="20px" height="20px">
+                                        <use href="./images/icons.svg#icon-twitter-1">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-icon-item">
+                                <a class="card-soc" href="">
+                                    <svg class="soc-icon" width="20px" height="20px">
+                                        <use href="./images/icons.svg#icon-facebook-1">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="team-icon-item">
+                                <a class="card-soc" href="">
+                                    <svg class="soc-icon" width="20px" height="20px">
+                                        <use href="./images/icons.svg#icon-linkedin-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                </div>
             
-        </div>
-    </footer>
+            </div>
+        </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>

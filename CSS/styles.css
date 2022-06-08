@@ -94,6 +94,11 @@ text-decoration: none;
 }
 
 .header-item::after {
+
+position: absolute;
+left: 0;
+bottom: -39.3px;
+
 content: "";
 height: 4px;
 width: 100%;
@@ -101,11 +106,20 @@ display: block;
 border-radius: 2px;
 background: #2196F3;
 
-position: absolute;
-left: 0;
-bottom: -39.3px;
 opacity: 0;
-transition: 250ms opacity linear;
+transition-property: opacity;
+
+
+transition-duration: 1000ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .current-menu-item {
+color: #2196F3;
+} */
+
+.header-list.current-menu-item.header-link {
+border-bottom: 4px solid green;
 }
 
 .header-item:hover::after {
@@ -217,6 +231,11 @@ color: #FFFFFF;
 background-color: #2196F3;
 }
 
+.btn:hover {
+
+}
+
+
 .backdrop {
 position: fixed;
 
@@ -240,7 +259,7 @@ left: 50%;
 transform: translate(-50%, -50%);
 
 width: 528px;
-height: 581px;
+min-height: 581px;
 
 
 background: #FFFFFF;
@@ -249,6 +268,22 @@ border-radius: 4px;
 
 }
 
+.btn-close {
+position: absolute;
+border:none;
+background: none;
+position: absolute;
+top: 0;
+right: 0;
+margin: 8px 8px 765px 490px;
+cursor: pointer; }
+
+.btn-icon {
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 50%;
+
+}
 
 
 /*-------Особенности------------*/

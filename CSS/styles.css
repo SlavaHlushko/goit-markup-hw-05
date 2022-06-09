@@ -163,6 +163,10 @@ fill: #2196F3;
 outline: none;
 }
 
+.current {
+color: #2196F3;
+}
+
 .header-link.current::after {
     position: absolute;
     left: 0;

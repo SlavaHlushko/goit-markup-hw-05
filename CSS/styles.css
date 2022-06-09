@@ -99,39 +99,6 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-
-
-
-/* .header-item::after {
-
-position: absolute;
-left: 0;
-bottom: -39.3px;
-
-content: "";
-height: 4px;
-width: 100%;
-display: block;
-border-radius: 2px;
-background: #2196F3;
-
-opacity: 0;
-transition-property: opacity;
-
-
-transition-duration: 1000ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
-/* .current-menu-item {
-color: #2196F3;
-} */
-
-.header-list.current-menu-item.header-link {
-border-bottom: 4px solid green;
-}
-
 .header-item:hover::after {
 opacity: 1;
 
@@ -199,7 +166,7 @@ outline: none;
 .header-link.current::after {
     position: absolute;
     left: 0;
-    bottom: -39.3px;
+    bottom: -39.5px;
 
     content: "";
     height: 4px;

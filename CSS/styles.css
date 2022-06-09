@@ -230,6 +230,7 @@ line-height: 1.88;
 letter-spacing: 0.06em;
 color: #FFFFFF;
 background-color: #2196F3;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .btn:hover {
@@ -724,6 +725,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  {
 background-color: #2196F3;
 color: var(--header-background-color);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .btn-item:focus {
